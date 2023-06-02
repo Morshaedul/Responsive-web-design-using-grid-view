@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive columns design</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" media="screen and (max-width: 992px)" href="laptop.css">
+    <link rel="stylesheet" media="screen and (max-width: 600px)" href="mobile.css">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .header {
+            color: white;
+            background-color: gray;
+            text-align: center;
+            padding: 1% 5%;
+            font-size: 20px;
+            font-size: 30px;
+        }
+
+        .nav-menu {
+            padding: 1% 5%;
+            background-color: rgb(93, 196, 196);
+
+        }
+
+        .nav-menu a {
+            color: red;
+            
+            text-decoration: none;
+            font-size: 25px;
+            padding: 10px;
+            background-color: black;
+            display: block;
+            margin: 10px;
+            border-radius: 10px;
+            text-align: center;
+
+        }
+
+        .main {
+            background-color: rebeccapurple;
+
+        }
+        .aside{
+            background-color: rgb(228, 186, 122);
+        }
+
+        .footer {
+            background-color: black;
+            color: white;
+            padding: 20px;
+            font-size: 0.8rem;
+        }
+        [class*="col-"]{
+            float: left;
+            padding: 10px;
+        }
+
+        .row::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+        @media screen and (max-width: 600px) {
+            /* for mobile */
+            .col-s-1 {width: 8.33%;}
+        .col-ss-2 {width: 16.66%;}
+        .col-ss-3 {width: 25%;}
+        .col-s-4 {width: 33.33%;}
+        .col-ss-5 {width: 41.66%;}
+        .col-ss-6 {width: 50%;}
+        .col-ss-7 {width: 58.33%;}
+        .col-ss-8 {width: 66.66%;}
+        .col-ss-9 {width: 75%;}
+        .col-ss-10 {width: 83.33%;}
+        .col-ss-11 {width: 91.66%;}
+        .col-ss-12 {width: 100%;}
+            
+        }
+        @media screen and (min-width: 600px) {
+            /* for tablet */
+            .col-s-1 {width: 8.33%;}
+        .col-s-2 {width: 16.66%;}
+        .col-s-3 {width: 25%;}
+        .col-s-4 {width: 33.33%;}
+        .col-s-5 {width: 41.66%;}
+        .col-s-6 {width: 50%;}
+        .col-s-7 {width: 58.33%;}
+        .col-s-8 {width: 66.66%;}
+        .col-s-9 {width: 75%;}
+        .col-s-10 {width: 83.33%;}
+        .col-s-11 {width: 91.66%;}
+        .col-s-12 {width: 100%;}
+            
+        }
+        @media screen and (min-width: 768px) {
+            /* for desktop in desktop */
+            .col-1 {width: 8.33%;}
+        .col-2 {width: 16.66%;}
+        .col-3 {width: 25%;}
+        .col-4 {width: 33.33%;}
+        .col-5 {width: 41.66%;}
+        .col-6 {width: 50%;}
+        .col-7 {width: 58.33%;}
+        .col-8 {width: 66.66%;}
+        .col-9 {width: 75%;}
+        .col-10 {width: 83.33%;}
+        .col-11 {width: 91.66%;}
+        .col-12 {width: 100%;}
+            
+        }
+        
+
+        
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <h1>MORSHAEDUL ALOM</h1>
+    </div>
+    <div class="row">
+        <div class="nav-menu col-2 col-ss-4 col-s-3">
+            <a href="">Home</a>
+            <a href="">Tutorial</a>
+            <a href="">Contact</a>
+            <a href="">More</a>
+        </div>
+        <div class="main col-7 col-ss-8 col-s-9 ">
+            <h1>I am a web designer</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non in beatae mollitia? Cumque odio repudiandae
+                quia modi suscipit minus vel.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore saepe quia voluptate labore
+                voluptatibus consectetur, itaque incidunt eaque obcaecati maiores, repudiandae aperiam porro quasi.
+                Corrupti Corrupti Corrupti
+                dolore, placeat repellendus doloribus quo mollitia inventore quia, nisi, voluptas ea temporibus culpa
+                rerum sed aut dolorum debitis ullam fugit explicabo dicta eligendi! Sequi quo suscipit asperiores iusto
+                nulla quisqs dolores doloribus numquam eaque. Perspiciatis placeat, facere necessitatibus aut voluptas
+                dolorem! Nulla ipsa architecto deleniti optio incidunt maxime sed perspiciatis voluptates nam cupiditate
+                perspic
+                dolore, placeat repellendus doloribus quo mollitia inventore quia, nisi, voluptas ea temporibus culpa
+                rerum sed aut dolorum debitis ullam fugit explicabo dicta eligendi! Sequi quo suscipit asperiores iusto
+                nulla quisqs dolores doloribus numquam eaque. Perspiciatis placeat, facere necessitatibus aut voluptas
+                dolorem! Nulla ipsa architecto deleniti optio incidunt maxime sed perspiciatis voluptates nam cupiditate
+                perspic
+                dolore, placeat repellendus doloribus quo mollitia inventore quia, nisi, voluptas ea temporibus culpa
+                rerum sed aut dolorum debitis ullam fugit explicabo dicta eligendi! Sequi quo suscipit asperiores iusto
+                nulla quisqs dolores doloribus numquam eaque. Perspiciatis placeat, facere necessitatibus aut voluptas
+                dolorem! Nulla ipsa architecto deleniti optio incidunt maxime sed perspiciatis voluptates nam cupiditate
+                perspiciatis error delectus fuga quidem aperiam, minus quos accusamus
+                architecto expedita reiciendis. Maiores autem quisquam dignissimos sapiente maxime voluptatum veniam</p>
+
+
+
+        </div>
+        <div class="aside col-3 col-s-12">
+            <h2>What is i love?</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti voluptate perspiciatis sunt, hic magnam
+                deleniti excepturi! Molestias doloribus repellat assumenda.</p>
+            <h2>What do you do?</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere repellendus ducimus impedit laudantium
+                earum, voluptatem voluptatum cumque doloremque quibusdam quas hic, doloribus aliquid! Maiores, illo?</p>
+            <h2>What is i love?</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti voluptate perspiciatis sunt, hic magnam
+                deleniti excepturi! Molestias doloribus repellat assumenda.</p>
+
+            </div>
+    </div>
+    <div class="footer">
+        <h1>this is footer</h1>
+
+    </div>
+
+
+
+
+</body>
+
+</html>
